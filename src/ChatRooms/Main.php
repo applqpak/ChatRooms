@@ -49,7 +49,7 @@
         if(!(isset($args[0])))
         {
 
-          $sender->sendMessage(TF::RED . "Error: not enough args. Usage: /chatrooms <join | list | leave | create | chat> [room | room | name | message].");
+          $sender->sendMessage(TF::RED . "Error: not enough args. Usage: /chatrooms <join | list | leave | create | chat> [room | room | name | room] [message].");
 
           return true;
 
