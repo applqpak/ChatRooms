@@ -29,16 +29,14 @@
     public function onEnable()
     {
 
-      if(!(is_dir($this->dataPath())))
-      {
+    if(!(is_dir($this->dataPath())))
+    {
 
-        @mkdir($this->dataPath());
+      @mkdir($this->dataPath());
 
-        @touch($this->dataPath() . "chats.txt");
+      @touch($this->dataPath() . "chats.txt");
 
-        @chdir($this->dataPath());
-
-      }
+      @chdir($this->dataPath());
 
     }
 
