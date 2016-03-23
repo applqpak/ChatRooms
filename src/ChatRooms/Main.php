@@ -104,6 +104,10 @@
             else
             {
 
+              $player_name = $sender->getName();
+
+              $this->chats[$roomName] .= ", " . $player_name;
+
             }
 
           }
