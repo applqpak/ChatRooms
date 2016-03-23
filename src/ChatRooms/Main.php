@@ -88,6 +88,18 @@
             }
 
           }
+          else if($args[0] === "join")
+          {
+
+          }
+          else if($args[0] === "list")
+          {
+
+          }
+          else if($args[0] === "leave")
+          {
+
+          }
 
         }
 
