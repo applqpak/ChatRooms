@@ -91,6 +91,21 @@
           else if($args[0] === "join")
           {
 
+            $roomName = implode(" ", $args);
+
+            if(!(isset($this->chats[$roomName])))
+            {
+
+              $sender->sendMessage(TF::RED . "Error: " . $roomName . " doesn't exist.");
+
+              return true;
+
+            }
+            else
+            {
+
+            }
+
           }
           else if($args[0] === "list")
           {
