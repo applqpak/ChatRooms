@@ -108,6 +108,16 @@
 
               $this->chats[$roomName] .= ", " . $player_name;
 
+              foreach($this->chats as $key => $value)
+              {
+
+                if($key === $roomName)
+                {
+
+                }
+
+              }
+
             }
 
           }
