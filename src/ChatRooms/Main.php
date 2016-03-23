@@ -49,7 +49,7 @@
         if(!(isset($args[0])))
         {
 
-          $sender->sendMessage(TF::RED . "Error: not enough args. Usage: /chatrooms <join | list | leave | create | chat> [room | room | name | message]");
+          $sender->sendMessage(TF::RED . "Error: not enough args. Usage: /chatrooms <join | list | leave | create | chat> [room | room | name | message].");
 
           return true;
 
@@ -59,6 +59,23 @@
 
           if($args[0] === "create")
           {
+
+            unset($args[0]);
+
+            $roomName = implode(" ", $args);
+
+            if(in_array($roomName, $this->chats))
+            {
+
+              $sender->sendMessage(TF::RED . "Error: " . $roomName . " already exists.");
+
+              return true;
+
+            }
+            else
+            {
+
+            }
 
           }
 
