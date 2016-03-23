@@ -1,0 +1,16 @@
+name: ChatRooms
+version: 1.0.0
+author: applqpak
+api:
+- 1.0.0
+- 2.0.0
+main: ChatRooms\Main
+commands:
+  chatrooms:
+    usage: "/chatrooms <join | list | leave | chat> [room | room | message]"
+    description: Join, List, Leave, Chat in Player a ChatRooms!
+    permission: chatrooms.command
+    aliases: [cr]
+permissions:
+  chatrooms.command:
+    default: op
