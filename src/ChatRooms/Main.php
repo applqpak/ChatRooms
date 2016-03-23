@@ -66,7 +66,7 @@
 
             $player_name = $sender->getName();
 
-            if(in_array($roomName, $this->chats))
+            if(isset($this->chats[$roomName]))
             {
 
               $sender->sendMessage(TF::RED . "Error: " . $roomName . " already exists.");
@@ -77,7 +77,7 @@
             else
             {
 
-              array_push($this->chats, $roomName);
+              $this->chats[$roomName] = $player_name;
 
               $sender->sendMessage(TF::GREEN . "Success: " . $roomName . " was created.");
 
