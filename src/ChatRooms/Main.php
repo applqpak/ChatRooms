@@ -29,6 +29,17 @@
     public function onEnable()
     {
 
+      if(!(is_dir($this->dataPath())))
+      {
+
+        @mkdir($this->dataPath());
+
+        @touch($this->dataPath() . "chats.txt");
+
+        @chdir($this->dataPath());
+
+      }
+
     }
 
     public function onCommand(CommandSender $sender, Command $cmd, $label, array $args)
