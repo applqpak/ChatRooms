@@ -7,7 +7,7 @@ api:
 main: ChatRooms\Main
 commands:
   chatrooms:
-    usage: "/chatrooms <join | list | leave | chat> [room | room | message]"
+    usage: "/chatrooms <join | list | leave | create | chat> [room | room | name | message]"
     description: Join, List, Leave, Chat in Player a ChatRooms!
     permission: chatrooms.command
     aliases: [cr]
