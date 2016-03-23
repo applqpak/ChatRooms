@@ -13,4 +13,4 @@ commands:
     aliases: [cr]
 permissions:
   chatrooms.command:
-    default: op
+    default: true
