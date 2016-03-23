@@ -64,6 +64,8 @@
 
             $roomName = implode(" ", $args);
 
+            $player_name = $sender->getName();
+
             if(in_array($roomName, $this->chats))
             {
 
@@ -74,6 +76,14 @@
             }
             else
             {
+
+              array_push($this->chats, $roomName);
+
+              $sender->sendMessage(TF::GREEN . "Success: " . $roomName . " was created.");
+
+              $this->server()->broadcastMessage(TF::YELLOW . "Chat room " . $roomName . " created by " . $player_name . " was created.");
+
+              return true;
 
             }
 
